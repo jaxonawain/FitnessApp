@@ -5,6 +5,11 @@
         <link rel="stylesheet" href="../static/css/base.css" type="text/css">
     </head>
     <body>
-        <h1>Some Text</h1>
+        <h1>Welcome, {{ username }}</h1>
+        <div class="horizontal-nav" id='horizontal-nav'> 
+            <a href="/create_workout_type">Edit</a>
+            <a href="/statistics">Stats</a>
+            <a href="/logout">Logout</a>
+        </div>
     </body>
 </html>
