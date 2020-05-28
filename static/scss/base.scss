@@ -3,3 +3,9 @@ $header-font-stack: Georgia, Times, ‘Times New Roman’, serif;
 $primary-background-color: rgba(44, 66, 81, 1);
 $primary-container-color: rgba(191, 215, 234, 1);
 $primary-border-color:  rgba(115, 146, 183, 1);
+body{
+    background-color: $primary-background-color;
+}
+h1{
+    font: $header-font-stack;
+}

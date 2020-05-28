@@ -1,3 +1,8 @@
+@charset "UTF-8";
+body {
+  background-color: #2c4251; }
 
+h1 {
+  font: Georgia, Times, ‘Times New Roman’, serif; }
 
 /*# sourceMappingURL=base.css.map */
