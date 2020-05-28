@@ -1,8 +1,36 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'alcubierreregular';
+  src: url("../resources/fonts/Alcubierre/alcubierre-webfont.woff2") format("woff2"), url("../resources/fonts/Alcubierre/alcubierre-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 body {
-  background-color: #2c4251; }
+  background-color: #6a90aa;
+  color: #dfeeff;
+  letter-spacing: 2px; }
 
 h1 {
-  font: Georgia, Times, ‘Times New Roman’, serif; }
+  font-family: alcubierreregular, Times, ‘Times New Roman’, sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #dfeeff;
+  font-family: alcubierreregular, ‘Times New Roman’, Times, serif; }
+
+.horizontal-nav {
+  border-radius: 3px;
+  margin: 0 auto;
+  background-color: rgba(166, 188, 206, 0.575);
+  font-family: alcubierreregular, Times, ‘Times New Roman’, sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 50%; }
+  .horizontal-nav a {
+    font-size: 140%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 2px; }
+  .horizontal-nav a:hover {
+    background-color: rgba(166, 188, 206, 0.575); }
 
 /*# sourceMappingURL=base.css.map */

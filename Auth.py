@@ -26,9 +26,10 @@ class Session:
 
     def extend_timeout(self):
         self.sessions_db.sessions_coll.update_one({"username": self.http_headers['username']},
-                                              {"$set": {
-                                                  "session_timeout_datetime": str(datetime.now() + timedelta(minutes=15))
-                                              }})
+                                                  {"$set": {
+                                                      "session_timeout_datetime": str(
+                                                          datetime.now() + timedelta(minutes=15))
+                                                  }})
 
     def validate_timeout(self):
         for document in self.sessions_db.sessions_coll.find({"username": self.http_headers["username"]}):
@@ -59,5 +60,5 @@ session_start_headers = {"username": "TestUsername", "password": "Jw!12345", "ip
 
 new_session = Session(session_start_headers)
 print(new_session.create_session_hash())
-#new_session.open_session()
-#new_session.validate_timeout()
+# new_session.open_session()
+# new_session.validate_timeout()

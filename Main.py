@@ -8,8 +8,11 @@ app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 @app.route('/')
 def render_index():
-    return render_template('index.html')
+    return render_template('index.html', username='Jakson')
 
+@app.route('/edit')
+def render_edit_page():
+    return render_template('edit.html')
 
 @app.route('/statistics')
 def render_statistics_page():
