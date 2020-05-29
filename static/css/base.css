@@ -1,27 +1,30 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'alcubierreregular';
   src: url("../resources/fonts/Alcubierre/alcubierre-webfont.woff2") format("woff2"), url("../resources/fonts/Alcubierre/alcubierre-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 body {
+  background-image: url("../resources/images/weights-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
   background-color: #6a90aa;
   color: #dfeeff;
   letter-spacing: 2px; }
 
 h1 {
-  font-family: alcubierreregular, Times, ‘Times New Roman’, sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 a {
   text-decoration: none;
   color: #dfeeff;
-  font-family: alcubierreregular, ‘Times New Roman’, Times, serif; }
+  font-family: "Roboto", sans-serif; }
 
 .horizontal-nav {
   border-radius: 3px;
   margin: 0 auto;
-  background-color: rgba(166, 188, 206, 0.575);
-  font-family: alcubierreregular, Times, ‘Times New Roman’, sans-serif;
+  background-color: rgba(71, 76, 80, 0.87);
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   width: 50%; }
@@ -31,6 +34,6 @@ a {
     margin-right: 2%;
     border-radius: 2px; }
   .horizontal-nav a:hover {
-    background-color: rgba(166, 188, 206, 0.575); }
+    background-color: rgba(71, 76, 80, 0.87); }
 
 /*# sourceMappingURL=base.css.map */

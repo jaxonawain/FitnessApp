@@ -6,14 +6,18 @@
     font-style: normal;
 
 }
-$body-font-stack: alcubierreregular, ‘Times New Roman’, Times, serif;
-$header-font-stack: alcubierreregular, Times, ‘Times New Roman’, sans-serif;
+$body-font-stack:'Roboto', sans-serif; 
+$header-font-stack: 'Roboto', sans-serif; 
 $primary-font-color:  rgb(223, 238, 255);
 $primary-background-color: rgb(106, 144, 170);
-$primary-container-color: rgba(166, 188, 206, 0.575);
+$primary-container-color: rgba(71, 76, 80, 0.87);
 $primary-hover-color:  rgb(43, 79, 122);
 
 body{
+    background-image: url('../resources/images/weights-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
     background-color: $primary-background-color;
     color: $primary-font-color;
     letter-spacing: 2px;
